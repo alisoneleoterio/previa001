@@ -1,6 +1,5 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, Instagram, Twitter, Youtube, MapPin, Mail, Phone, MessageCircle } from "lucide-react"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -10,11 +9,10 @@ export default function Footer() {
       <div className="absolute -top-40 -right-40 w-80 h-80 bg-cyan-300 rounded-full opacity-10 blur-3xl"></div>
 
       <div className="container mx-auto px-4">
-        {/* Linha divisória */}
         <div className="mt-10">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-white/50 text-sm mb-4 md:mb-0">
-              &copy; {currentYear} Studio O Barba | CNPJ: 12.345.678/0001-90
+              &copy; {currentYear} Studio O Barba | CNPJ: 00.000.000/0000-00
             </p>
 
             <div>

@@ -72,6 +72,13 @@ export default function Header() {
             className="text-sm font-medium hover:text-cyan-300 transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-cyan-300 after:transition-all hover:after:w-full"          >
             Contato
           </Link>
+          <Link
+            href="/produtos"
+            target="_blank"
+            className="text-sm font-medium hover:text-cyan-300 transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-cyan-300 after:transition-all hover:after:w-full"
+          >
+            Produtos
+          </Link>
         </nav>
 
         {/* Botão de agendamento para desktop */}
@@ -96,10 +103,18 @@ export default function Header() {
       {isMenuOpen && (
         <div className="lg:hidden bg-black/95 backdrop-blur-md fixed inset-0 z-50 pt-20">
           <div className="container mx-auto px-4">
+            <button
+              onClick={toggleMenu}
+              className="absolute top-6 right-6 bg-cyan-300 text-black p-2 rounded-full hover:bg-cyan-400 transition-all"
+              aria-label="Fechar menu"
+            >
+              <X size={24} />
+            </button>
+
             <nav className="flex flex-col space-y-6 py-8">
               <Link
                 href="#home"
-                className="text-2xl font-medium hover:text-amber-400 transition-colors py-2 border-b border-white/10"
+                className="text-2xl font-medium hover:text-cyan-300 transition-colors py-2 border-b border-white/10"
                 onClick={toggleMenu}
               >
                 Home

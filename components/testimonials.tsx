@@ -29,6 +29,42 @@ export default function Testimonials() {
       status: "Cliente há 2 anos",
       rating: 5,
     },
+    {
+      text: "Ótimo atendimento, organizado e limpo.",
+      name: "Haroldo Santos",
+      status: "Cliente há 2 anos",
+      rating: 5,
+    },
+    {
+      text: "Venha conhecer essa linda barbearia em Jacareí. Ótimo atendimento.",
+      name: "Raquel Moura",
+      status: "Cliente há 2 anos",
+      rating: 5,
+    },
+    {
+      text: "Meu marido e meus filhos adoram",
+      name: "Ivete Melo",
+      status: "Cliente há 2 anos",
+      rating: 4,
+    },
+    {
+      text: "Muito bom, ambiente excelente",
+      name: "Benedito Mota",
+      status: "Cliente há 4 anos",
+      rating: 5,
+    },
+    {
+      text: "Ótimo atendimento, muito atencioso com meu filho de 1 ano! Parabéns pelo ótimo trabalho!",
+      name: "Larissa Pereira",
+      status: "Cliente há 1 ano",
+      rating: 5,
+    },
+    {
+      text: "Excelentes profissionais.",
+      name: "Gabriel Martins",
+      status: "Cliente há 1 ano",
+      rating: 5,
+    },
   ]
 
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -94,7 +130,7 @@ export default function Testimonials() {
                 {testimonials.map((testimonial, index) => (
                   <div key={index} className="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-4">
                     <div className="bg-black text-white p-8 rounded-2xl shadow-xl h-full flex flex-col">
-                      <div className="flex text-amber-400 mb-4">
+                      <div className="flex text-cyan-400 mb-4">
                         {[...Array(testimonial.rating)].map((_, i) => (
                           <Star key={i} size={20} fill="#f59e0b" />
                         ))}

@@ -16,9 +16,7 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen flex items-center pt-24 pb-16 bg-black text-white overflow-hidden"
     >
-      {/* Background image with overlay */}
       <div className="absolute inset-0 z-0">
-        {/* Substitua por uma imagem real da barbearia */}
         <Image
           src="/background-black.jpg"
           alt="Barbearia Background"
@@ -31,7 +29,6 @@ export default function Hero() {
 
       <div className="container mx-auto px-4 z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Substitua por uma imagem real da barbearia */}
           <div className="relative h-[300px] md:h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src="/logo.jpg"
@@ -54,11 +51,10 @@ export default function Hero() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href="https://wa.me/5512997878196?text=Olá%2C%20quero%20agendar%20um%20horário!"
+                href="/produtos"
                 className="bg-cyan-300 hover:bg-cyan-400 text-black font-bold py-4 px-8 rounded-full text-lg transition-all hover:shadow-lg hover:scale-105 text-center"
-                target="_blank"
               >
-                Agende seu horário
+                Nossos produtos
               </Link>
               <Link
                 href="#services"
