@@ -101,8 +101,7 @@ export default function Header() {
 
       {/* Menu mobile */}
       {isMenuOpen && (
-        <div className="lg:hidden bg-black/95 backdrop-blur-md fixed inset-0 z-50 pt-20">
-          <div className="container mx-auto px-4">
+        <div className="fixed inset-0 z-50 bg-black/95 backdrop-blur-md h-screen px-4 pt-20">
             <button
               onClick={toggleMenu}
               className="absolute top-6 right-6 bg-cyan-300 text-black p-2 rounded-full hover:bg-cyan-400 transition-all"
@@ -162,7 +161,6 @@ export default function Header() {
                 Fale Conosco
               </Link>
             </nav>
-          </div>
         </div>
       )}
     </header>
