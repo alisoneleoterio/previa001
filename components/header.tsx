@@ -131,6 +131,7 @@ export default function Header() {
                 className="text-2xl font-medium hover:text-cyan-300 transition-colors py-2 border-b border-white/10"
                 onClick={toggleMenu}
               >
+                Produtos
               </Link>
               <Link
                 href="#about"
