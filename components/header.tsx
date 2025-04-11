@@ -126,6 +126,12 @@ export default function Header() {
               >
                 Serviços
               </Link>
+              <Link 
+                href="/produtos"
+                className="text-2xl font-medium hover:text-cyan-300 transition-colors py-2 border-b border-white/10"
+                onClick={toggleMenu}
+              >
+              </Link>
               <Link
                 href="#about"
                 className="text-2xl font-medium hover:text-cyan-300 transition-colors py-2 border-b border-white/10"
@@ -148,11 +154,11 @@ export default function Header() {
                 Contato
               </Link>
               <Link
-                href="#contact"
+                href="https://api.whatsapp.com/send?l=pt-BR&text=Ol%C3%A1,++vim+pelo+seu+site+!&phone=5512982769309&fbclid=PAZXh0bgNhZW0CMTEAAadi5Wj3skCbM5nNy9wFsqWVMYTVTRTD--QUHsg9UFzy_eVK-7dUbpMfVdOgWw_aem_fB9oHNYu9BaOT41DoVr4Zg"
                 className="bg-cyan-300 hover:bg-cyan-400 text-black font-bold py-3 px-6 rounded-full transition-all text-center mt-4 hover:shadow-lg"
                 onClick={toggleMenu}
               >
-                Agende Agora
+                Fale Conosco
               </Link>
             </nav>
           </div>

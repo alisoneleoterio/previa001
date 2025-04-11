@@ -80,7 +80,7 @@ export default function ProductsHero() {
     <section className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4" ref={ref}>
         <div className="text-center mb-16">
-          <span className="text-cyan-400 font-semibold text-sm uppercase tracking-wider">Nossa Loja</span>
+          <span className="text-cyan-400 font-semibold text-sm uppercase tracking-wider">Compre e retire na barbearia</span>
           <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4 text-black">Produtos Exclusivos</h1>
           <p className="text-black/60 max-w-2xl mx-auto text-lg">
             Conheça nossa linha de produtos profissionais para cuidados masculinos. Qualidade garantida para manter seu

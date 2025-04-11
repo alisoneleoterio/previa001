@@ -94,14 +94,6 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
         return [...prevItems, { ...product, quantity: 1 }]
       }
     })
-
-    // Abrir o carrinho automaticamente quando um item é adicionado
-    setIsCartOpen(true)
-
-    // Fechar o carrinho após 3 segundos
-    setTimeout(() => {
-      setIsCartOpen(false)
-    }, 3000)
   }
 
   // Remover item do carrinho

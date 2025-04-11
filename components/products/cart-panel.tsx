@@ -21,7 +21,7 @@ export default function CartPanel() {
     let message = "Olá! Gostaria de fazer o seguinte pedido:\n\n"
 
     items.forEach((item) => {
-      message += `• ${item.quantity}x ${item.name} - R$ ${formatPrice(item.price * item.quantity)}\n`
+      message += `• ${item.quantity}x ${item.name} - R$ ${formatPrice(item.price)}\n`
     })
 
     message += `\nTotal: R$ ${formatPrice(totalPrice)}\n\nPor favor, confirme a disponibilidade dos produtos.`
